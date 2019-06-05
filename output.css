@@ -1,0 +1,57 @@
+/*
+Error: Undefined variable: "$white".
+        on line 1 of input.scss
+
+1: $timeline-color: $white;
+2: $timeline-transition: all 0.25s ease-in;
+3: $timeline-item-card-bg: $white;
+4: $timeline-item-font-color: $white;
+5: $timeline-item-card: false;
+6: $timeline-item-card-radius: $global-radius;
+
+Backtrace:
+input.scss:1
+/home/salim/.rvm/gems/ruby-2.5.1/gems/sass-3.7.4/lib/sass/script/tree/variable.rb:49:in `_perform'
+/home/salim/.rvm/gems/ruby-2.5.1/gems/sass-3.7.4/lib/sass/script/tree/node.rb:50:in `perform'
+/home/salim/.rvm/gems/ruby-2.5.1/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:478:in `visit_variable'
+/home/salim/.rvm/gems/ruby-2.5.1/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
+/home/salim/.rvm/gems/ruby-2.5.1/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/home/salim/.rvm/gems/ruby-2.5.1/gems/sass-3.7.4/lib/sass/stack.rb:79:in `block in with_base'
+/home/salim/.rvm/gems/ruby-2.5.1/gems/sass-3.7.4/lib/sass/stack.rb:135:in `with_frame'
+/home/salim/.rvm/gems/ruby-2.5.1/gems/sass-3.7.4/lib/sass/stack.rb:79:in `with_base'
+/home/salim/.rvm/gems/ruby-2.5.1/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/home/salim/.rvm/gems/ruby-2.5.1/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/home/salim/.rvm/gems/ruby-2.5.1/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `map'
+/home/salim/.rvm/gems/ruby-2.5.1/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/home/salim/.rvm/gems/ruby-2.5.1/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+/home/salim/.rvm/gems/ruby-2.5.1/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/home/salim/.rvm/gems/ruby-2.5.1/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+/home/salim/.rvm/gems/ruby-2.5.1/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/home/salim/.rvm/gems/ruby-2.5.1/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+/home/salim/.rvm/gems/ruby-2.5.1/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
+/home/salim/.rvm/gems/ruby-2.5.1/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:157:in `visit'
+/home/salim/.rvm/gems/ruby-2.5.1/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:10:in `visit'
+/home/salim/.rvm/gems/ruby-2.5.1/gems/sass-3.7.4/lib/sass/tree/root_node.rb:36:in `css_tree'
+/home/salim/.rvm/gems/ruby-2.5.1/gems/sass-3.7.4/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/home/salim/.rvm/gems/ruby-2.5.1/gems/sass-3.7.4/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+/home/salim/.rvm/gems/ruby-2.5.1/gems/sass-3.7.4/lib/sass/engine.rb:307:in `render_with_sourcemap'
+/home/salim/.rvm/gems/ruby-2.5.1/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
+/home/salim/.rvm/gems/ruby-2.5.1/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/home/salim/.rvm/gems/ruby-2.5.1/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:209:in `each'
+/home/salim/.rvm/gems/ruby-2.5.1/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/home/salim/.rvm/gems/ruby-2.5.1/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:294:in `watch'
+/home/salim/.rvm/gems/ruby-2.5.1/gems/sass-3.7.4/lib/sass/plugin.rb:109:in `method_missing'
+/home/salim/.rvm/gems/ruby-2.5.1/gems/sass-3.7.4/lib/sass/exec/sass_scss.rb:358:in `watch_or_update'
+/home/salim/.rvm/gems/ruby-2.5.1/gems/sass-3.7.4/lib/sass/exec/sass_scss.rb:51:in `process_result'
+/home/salim/.rvm/gems/ruby-2.5.1/gems/sass-3.7.4/lib/sass/exec/base.rb:50:in `parse'
+/home/salim/.rvm/gems/ruby-2.5.1/gems/sass-3.7.4/lib/sass/exec/base.rb:18:in `parse!'
+/home/salim/.rvm/gems/ruby-2.5.1/gems/sass-3.7.4/bin/sass:13:in `<top (required)>'
+/home/salim/.rvm/gems/ruby-2.5.1/bin/sass:23:in `load'
+/home/salim/.rvm/gems/ruby-2.5.1/bin/sass:23:in `<main>'
+/home/salim/.rvm/gems/ruby-2.5.1/bin/ruby_executable_hooks:24:in `eval'
+/home/salim/.rvm/gems/ruby-2.5.1/bin/ruby_executable_hooks:24:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined variable: \"$white\".\A         on line 1 of input.scss\A \A 1: $timeline-color: $white;\A 2: $timeline-transition: all 0.25s ease-in;\A 3: $timeline-item-card-bg: $white;\A 4: $timeline-item-font-color: $white;\A 5: $timeline-item-card: false;\A 6: $timeline-item-card-radius: $global-radius;"; }

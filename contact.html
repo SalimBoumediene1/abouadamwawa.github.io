@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script type="text/javascript" src="alphabet.js"></script>
 </head>
 
@@ -56,10 +57,10 @@
                         <p>
                             Excepteur reprehenderit sint exercitation ipsum consequat qui sit id velit elit. Velit anim eiusmod labore sit amet.
                         </p>
-                        <form action="#" class="">
-                            <div class="style="background-color:white;" mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                        <form action="index.html" class="" method="POST"> 
+                            <div style="background-color:white;" class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
                                 <input class="mdl-textfield__input" pattern="[A-Z,a-z, ]*" type="text" id="Name">
-                                <label class="mdl-textfield__label" for="Name">Name...</label>
+                                <label id="name" class="mdl-textfield__label" for="Name">Name...</label>
                                 <span class="mdl-textfield__error">Letters and spaces only</span>
                             </div>
                             <div style="background-color:white;" class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
@@ -70,18 +71,16 @@
                                 <textarea class="mdl-textfield__input" type="text" rows="5" id="note"></textarea>
                                 <label class="mdl-textfield__label" for="note">Enter note</label>
                             </div>
-                            <p>
-                                <button style="background-color:white;" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" type="submit">
-                                    Submit
-                                </button>
-                            </p>
+                            </p><div id="submit" 
+                                     onclick="sendmail()"    
+                                     class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" type="submit">Submit</div>
                         </form>
                     </div>
                 </div>
             </div>
             <footer class="mdl-mini-footer">
                 <div class="mdl-mini-footer__left-section">
-                    <div class="mdl-logo">Simple portfolio website</div>
+                    <div class="mdl-logo">Boumediene Salim</div>
                 </div>
                 <div class="mdl-mini-footer__right-section">
                     <ul class="mdl-mini-footer__link-list">
@@ -92,10 +91,24 @@
             </footer>
         </main>
     </div>
+    <script>
+        function sendmail(){
+            var name = document.getElementById("Name").value
+            var email = document.getElementById("Email").value
+            var note = document.getElementById("note").value
+            console.log(name +" "+ email+" " + note)
+            Email.send({
+            SecureToken : "5625b544-3233-47c0-b4ab-cb398cd956ab",
+            To : 'salimboumediene@gmail.com',
+            From : "${email}",
+            Subject : "${name} ${note}",
+            Body : "And this is the body"
+            }).then(message => alert(message));
+        }
+    </script>
     <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
     <script type="text/javascript" src="bubbles.js"></script>
     <script type="text/javascript" src="index.js"></script>
 </body>
 
 </html>
-mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" type="submit">

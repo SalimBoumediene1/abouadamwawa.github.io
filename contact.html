@@ -99,10 +99,10 @@
             console.log(name +" "+ email+" " + note)
             Email.send({
             SecureToken : "5625b544-3233-47c0-b4ab-cb398cd956ab",
-            To : 'salimboumediene@gmail.com',
-            From : "${email}",
-            Subject : "${name} ${note}",
-            Body : "And this is the body"
+            To : email,
+            From : 'salimboumediene@gmail.com',
+            Subject : name,
+            Body : note
             }).then(message => alert(message));
         }
     </script>

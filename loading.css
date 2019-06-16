@@ -6,3 +6,17 @@ canvas{
     margin:0;
     cursor:none;
   }
+
+  .credit {z-index: 99999;
+    position: absolute;
+    bottom: 50px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .credit a {
+    color: rgb(37, 25, 0);
+    font: 800 75% "Open Sans", sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+  }

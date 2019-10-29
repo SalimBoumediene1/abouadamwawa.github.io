@@ -1,9 +1,9 @@
 // Define color variables:
 red = [33, 17, 3];
-orange = [61, 42, 7];
-green = [122, 84, 13];
-blue = [158, 130, 31];
-purple = [243, 249, 69];
+orange = [62, 94, 62];
+green = [39, 82, 13];
+blue = [39, 81, 26];
+purple = [47, 67, 37];
 letterColors = [red, orange, green, blue, purple];
 
 // This variable controls the smallest distance at which a mouse will make the dots react
